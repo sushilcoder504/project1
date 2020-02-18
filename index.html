@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sushil bhai</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+*{margin:0px;padding:0px;box-sizing:border-box;font-family: 'Poppins', sans-serif;}
+.header{
+width:100%;
+height:100vh;
+background-image:linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url("https://www.ultrabookreview.com/wp-content/uploads/2019/01/dell-xps-13-9380-2.jpg");
+background-repeat:no-repeat;
+background-size:100% 100%;
+clip-path:polygon(0 0,100% 0%,100% 70%,50% 100%,0% 75%);
+position:relative;
+}
+.header:before{
+content:"";
+position:absolute;
+top:0%;
+bottom:0%;
+right:0%;
+left:0%;
+opacity:0.3;
+z-index:-1;
+background:linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%)
+}
+.navbar:before{
+content:"";
+position:absolute;
+top:0%;
+bottom:0%;
+right:0%;
+left:0%;
+opacity:0.4;
+z-index:-1;
+background:linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%)
+}
+.nav-item a{color:white;
+font-weight:bold;
+}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+li{list-style:none;}
+.header-section{
+width:100%;
+height:inherit;
+color:white;
+text-align:center;
+position:relative;
+}
+.center-div{
+width:100%;
+height:auto;
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+-webkit-transform: translate(-50%,-50%);
+}
+p{font-size:0.9rem;line-height:1.6;font-weight:400;color:#606060;}
+.header-buttons a{
+border:1px solid #fff;
+border-radius:100px;
+margin:0 5px;
+padding:12px 35px;
+outline:none;
+color:#fff;
+font-size:1rem;
+font-weight:400;
+line-height:1.4;
+text-align:center;
+}
+.header-buttons a:hover{
+color: #50d1c0;
+background:#fff;
+text-decoration:none;
+box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+}
+.center-div p{
+color:#fff;
+font-weight:bold;
+font-size:0.9rem;
+padding:10px 0 20px 0px;
+}
+.header-extradiv{
+width:100%;height:auto;
+margin:100px 0;
+text-align:center;
+}
+.extra-div{
+background:#fff;
+border:medium none;
+padding:50px!important;
+border-radius:3px;
+transition:0.3s;
+}
+.extra-div h2,.servicediv h2{
+font-size:0.9rem;
+margin:20px 0 15px 0;
+font-weight:bold;
+line-height:1.1;
+}
+.extra-div:hover{
+box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+transform: translateY(-20px);
+}
+.servicesoffer{
+background:#f7f7f9;
+padding:50px 0;
+margin-bottom:50px;
+}
+.headings{
+margin-bottom:50px;
+}
+.headings h1{
+font-size:1.5rem;
+font-weight:600;
+text-transform:uppercase;
+}
+i{
+color: #2fccd0;
+}
+.names h1{
+color:#2e2e2e;
+font-size:0.9rem;
+text-transform:uppercase;
+font-weight:bold;
+}
+.service-icon{
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.progress{
+height:0.6rem!important;
+margin-bottom:25px!important;
+background:#606060;
+}
+.project-work{
+margin:100px 0;
+}
+.project-work h1{
+font-size:2rem;
+text-align:center;
+}
+.pricing{
+width:100%;
+height:100vh;
+padding:50px;
+position:relative;
+}
+.pricing:before{
+content:"";
+position:absolute;
+top:0%;
+bottom:0%;
+right:0;
+left:0;	
+z-index:-1;
+background:linear-gradient(160deg, #16c9f6 50%, #fff 0%)
+}
+.money{
+font-size:40px;
+line-height:1;
+color:#606060;
+}
+.card{
+transition:0.4s ease;
+}
+.card-header{
+font-size:1.6rem;
+font-weight:bold;
+background:#fff!important;
+padding:25px 9px!important;
+}
+.card-body{
+padding:30px 0px;
+}
+.card-body li{
+margin:10px 0;
+font-weight:400;
+font-size:15px;
+line-height:1.6;
+color:#606060;
+}
+.card-footer{
+background:#fff;
+padding:30px 0px!important;
+}
+.card-footer a{
+border:1px solid #50d1c0;
+border-radius:100px;
+margin:0 5px;
+padding:12px 35px;
+outline:none;
+color:#50d1c0;
+font-size:1rem;
+font-weight:400;
+line-height:1.4;
+text-align:center;
+}
+.card:hover .card-footer a{
+color: #fff;
+background:#50d1c0;
+text-decoration:none;
+box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+}
+.card:hover{
+transform:translateY(-20px);
+box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+}
+.card:hover .card-header , .card:hover .money{
+color:#50d1c0;
+}
+.card-second{
+transform:translateY(-20px);
+/*box-shadow:0 0 20px 0 rgba(0,0,0,0.3);*/
+}
+.happyclients{
+width:100%;
+height:100vh;
+padding:80px 0;
+}
+.box{
+text-align:center;
+border:1px solid rgba(0,0,0,0.2);
+box-shadow:0 5px 10px 0 rgba(0,0,0,0.3);
+}
+.box:hover{
+background-color:#16c9f6;
+}
+.box:hover p{
+color:#fff;
+}
+.carousel-indicators{
+position:absolute;
+right:0;
+bottom:-60px!important;
+}
+.carousel-indicators li{
+background:#16c9f6!important;
+}
+.box a{
+position:relative;
+}
+.box a img{
+width:100px;
+height:100px;
+border-radius:50%;
+margin-top:20px;
+}
+.box a:after{
+ content:"\f10d";
+ font-family:FontAwesome;
+ width:40px;
+ height:40px;
+ background:linear-gradient(to right,#1e5799 0%, #3ccdbb 0%, #16c9f6 100%)
+ color:white;
+ position:absolute;
+ top:120%;
+ left:70%;
+ border-radius:50%;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+}
+.box h1{
+font-size:18px;
+font-weight:700px;
+color:#000;
+margin-bottom:10px;
+}
+.box h2{
+font-size:13px;
+font-weight:400px;
+color:#666666;
+margin-bottom:20px;
+}
+</style>
+</head>
+<body>
+ <div class="header" id="topheader">
+ <nav class="navbar navbar-expand-lg fixed-top ">
+ <div class="container text-uppercase p-2">
+  <a class="navbar-brand text-white font-weight-bold" href="#">Sushil bhai</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto text-uppercase">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">services</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#">prices</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#">about</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#">contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<section class="header-section">
+<div class="center-div">
+<h1 class="font-weight-bold">we are the web developers</h1>
+<p>we create the world best websites.</p>
+<div class="header-buttons">
+<a href="#">About Us</a>
+<a href="#">Contact</a>
+</div>
+</div>
+</section>
+ </div>
+ 
+ <!--three extra header div start-->
+ <section class="header-extradiv">
+ <div class="container">
+ <div class="row">
+ <div class=" extra-div col-lg-4 col-md-4 col-12">
+ <a href="#"><i class="fa-3x fa fa-laptop" aria-hidden="true"></i></a>
+ <h2>EASY TO USE</h2>
+ <P>that is good for me in every were but i find you what are you doing then i say waht i am but i find that is good </P>
+ </div>
+  <div class=" extra-div col-lg-4 col-md-4 col-12">
+ <a href="#"><i class="fa-3x fa fa-trophy" aria-hidden="true"></i></a>
+ <h2>FONT AWESOME</h2>
+ <P>that is good for me in every were but i find you what are you doing then i say waht i am but i find that is good </P>
+ </div>
+  <div class=" extra-div col-lg-4 col-md-4 col-12">
+ <a href="#"><i class="fa-3x fa fa-magic" aria-hidden="true"></i></a>
+ <h2>EASY TO CUSTOMIZES</h2>
+ <P>that is good for me in every were but i find you what are you doing then i say waht i am but i find that is good </P>
+ </div>
+ </div>
+ </div>
+ </section>
+ <!--three extra header div end--> 
+ <!--offer section strart-->
+ <section class="servicesoffer" id="servicediv">
+ <div class="container text-center headings">
+ <h1 class="text-center font-weight-bold"> WHAT DO WE OFFERS</h1>
+ <p class="text-center">that is good chanse for take the offer of the services</p>
+ </div>
+ <div class="container">
+ <div class="row">
+ <div class="col-lg-6 col-md-12 col-10 offset-1 offset-lg-0">
+ <div class="names my-3">
+ <h1>html</h1>
+ <div class="progress w-75">
+ <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%">100%</div>
+ </div>
+ </div>
+  <div class="names my-3">
+ <h1>CSS</h1>
+ <div class="progress w-75">
+ <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:90%">90%</div>
+ </div>
+ </div>
+  <div class="names my-3">
+ <h1>JAVASCRIPT</h1>
+ <div class="progress w-75">
+ <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:85%">85%</div>
+ </div>
+ </div>
+  <div class="names my-3">
+ <h1>REACTJS</h1>
+ <div class="progress w-75">
+ <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width:75%">75%</div>
+ </div>
+ </div>
+  <div class="names my-3">
+ <h1>NODEJS</h1>
+ <div class="progress w-75">
+ <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:80%">80%</div>
+ </div>
+ </div>
+ </div>
+ <div class="col-lg-6 col-md-12 col-12 servicediv">
+ <div class="row">
+ <div class="col-lg-2 col-2 service-icon">
+ <i class="fa-3x fa fa-laptop" aria-hidden="true"></i>
+ </div>
+ <div class="col-lg-10 col-10">
+ <h2>website development</h2>
+ <p>that is good for learn this website because it is my intrest but i fined that is good services </p>
+ </div>
+ </div>
+  <div class="row">
+ <div class="col-lg-2 col-2 service-icon">
+ <i class="fa-3x fa fa-wifi" aria-hidden="true"></i>
+ </div>
+ <div class="col-lg-10 col-10">
+ <h2>desital marketing</h2>
+ <p>that is good for learn this website because it is my intrest but i fined that is good services </p>
+ </div>
+ </div>
+  <div class="row">
+ <div class="col-lg-2 col-2 service-icon">
+ <i class="fa-3x fa fa-phone" aria-hidden="true"></i>
+ </div>
+ <div class="col-lg-10 col-10">
+ <h2>support 24/7</h2>
+ <p>that is good for learn this website because it is my intrest but i fined that is good services </p>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+ 
+  <!--offer section strart-->
+   <section class="project-work">
+ <div class="container text-center headings">
+ <p class="text-center font-weight-bold"> more than 2000 website creates</p>
+ </div>
+<div class="container d-flex justify-content-around align-items-center text-center">
+<div>
+<h1 class="count">1500</h1>
+<p>sushil bhai</p>
+</div>
+<div>
+<h1 class="count">2500</h1>
+<p>sushil bhai</p>
+</div>
+<div>
+<h1 class="count">700</h1>
+<p>sushil bhai</p>
+</div>
+<div>
+<h1 class="count">500</h1>
+<p>sushil bhai</p>
+</div>
+ </div>
+ </section>
+ <section class="pricing" id="pricingdiv">
+ <div class="container text-center headings">
+ <h1 class="text-center font-weight-bold text-white"> OUR BEST PRICING</h1>
+ </div>
+ <div class="container">
+ <div class="row">
+ <div class="col-lg-4 col-md-4 col-12">
+ <div class="card text-center">
+  <div class="card-header">BASIC</div>
+  <div class="card-body">
+  <li>$<span class="money">20</span>/website</li>
+  <li>Responsive Website</li>
+  <li>Domain Name Free</li>
+  <li>Mobile Fraiendly</li>
+  <li>Webmail Support</li>
+  <li>Custmore Support 24/7</li>
+  </div>
+  <div class="card-footer">
+  <a href="#">Purchase</a>
+  </div>
+</div>
+ </div>
+  <div class="col-lg-4 col-md-4 col-12 card-second">
+ <div class="card text-center">
+  <div class="card-header">STANDER</div>
+  <div class="card-body">
+  <li>$<span class="money">40</span>/website</li>
+  <li>Responsive Website</li>
+  <li>Domain Name Free</li>
+  <li>Mobile Fraiendly</li>
+  <li>Webmail Support</li>
+  <li>Custmore Support 24/7</li>
+  </div>
+  <div class="card-footer">
+  <a href="#">Purchase</a>
+  </div>
+</div>
+ </div>
+  <div class="col-lg-4 col-md-4 col-12">
+ <div class="card text-center">
+  <div class="card-header">UNLIMITED</div>
+  <div class="card-body">
+  <li>$<span class="money">60</span>/website</li>
+  <li>Responsive Website</li>
+  <li>Domain Name Free</li>
+  <li>Mobile Fraiendly</li>
+  <li>Webmail Support</li>
+  <li>Custmore Support 24/7</li>
+  </div>
+  <div class="card-footer">
+  <a href="#">Purchase</a>
+  </div>
+</div>
+ </div>
+ </div>
+ </div>
+ </section>
+  <section class="happyclients">
+ <div class="container text-center headings">
+ <h1 class="text-center font-weight-bold "> OUR HAPPY CLIENTS</h1>
+ <P class="text-capitalize p-1">Our satisfied Customer says</P>
+ </div>
+ <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner container">
+    <div class="carousel-item active">
+	<div class="row">
+      <div class="col-lg-4 col-md-4 col-12">
+	  <div class="box">
+	  <a href="#"><img src="https://www.ultrabookreview.com/wp-content/uploads/2019/01/dell-xps-13-9380-2.jpg"class="img-fluid img-thumbnail"</a>
+	  <p class="m-4">that is good because it is very attractive for me in every were but i like that is good but i fined it is vry index</p>
+	  <h1>sushil bhai</h1>
+	  <h2>Web developer</h2>
+	  </div>
+	  </div>
+	  <div class="col-lg-4 col-md-4 col-12">
+	  <div class="box">
+	  <a href="#"><img src="https://www.ultrabookreview.com/wp-content/uploads/2019/01/dell-xps-13-9380-2.jpg"class="img-fluid img-thumbnail"</a>
+	  <p class="m-4">that is good because it is very attractive for me in every were but i like that is good but i fined it is vry index</p>
+	  <h1>sushil bhai</h1>
+	  <h2>Web developer</h2>
+	  </div>
+	  </div>
+	  <div class="col-lg-4 col-md-4 col-12">
+	  <div class="box">
+	  <a href="#"><img src="https://www.ultrabookreview.com/wp-content/uploads/2019/01/dell-xps-13-9380-2.jpg"class="img-fluid img-thumbnail"</a>
+	  <p class="m-4">that is good because it is very attractive for me in every were but i like that is good but i fined it is vry index</p>
+	  <h1>sushil bhai</h1>
+	  <h2>Web developer</h2>
+	  </div>
+	  </div><!--end-->
+	  </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+      <div class="col-lg-4 col-md-4 col-12">
+	  <div class="box">
+	  <a href="#"><img src="https://www.ultrabookreview.com/wp-content/uploads/2019/01/dell-xps-13-9380-2.jpg"class="img-fluid img-thumbnail"</a>
+	  <p class="m-4">that is good because it is very attractive for me in every were but i like that is good but i fined it is vry index</p>
+	  <h1>sushil bhai</h1>
+	  <h2>Web developer</h2>
+	  </div>
+	  </div>
+	  <div class="col-lg-4 col-md-4 col-12">
+	  <div class="box">
+	  <a href="#"><img src="https://www.ultrabookreview.com/wp-content/uploads/2019/01/dell-xps-13-9380-2.jpg"class="img-fluid img-thumbnail"</a>
+	  <p class="m-4">that is good because it is very attractive for me in every were but i like that is good but i fined it is vry index</p>
+	  <h1>sushil bhai</h1>
+	  <h2>Web developer</h2>
+	  </div>
+	  </div>
+	  <div class="col-lg-4 col-md-4 col-12">
+	  <div class="box">
+	  <a href="#"><img src="https://www.ultrabookreview.com/wp-content/uploads/2019/01/dell-xps-13-9380-2.jpg"class="img-fluid img-thumbnail"</a>
+	  <p class="m-4">that is good because it is very attractive for me in every were but i like that is good but i fined it is vry index</p>
+	  <h1>sushil bhai</h1>
+	  <h2>Web developer</h2>
+	  </div>
+	  </div><!--end-->
+	  </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+      <div class="col-lg-4 col-md-4 col-12">
+	  <div class="box">
+	  <a href="#"><img src="https://www.ultrabookreview.com/wp-content/uploads/2019/01/dell-xps-13-9380-2.jpg"class="img-fluid img-thumbnail"</a>
+	  <p class="m-4">that is good because it is very attractive for me in every were but i like that is good but i fined it is vry index</p>
+	  <h1>sushil bhai</h1>
+	  <h2>Web developer</h2>
+	  </div>
+	  </div>
+	  <div class="col-lg-4 col-md-4 col-12">
+	  <div class="box">
+	  <a href="#"><img src="https://www.ultrabookreview.com/wp-content/uploads/2019/01/dell-xps-13-9380-2.jpg"class="img-fluid img-thumbnail"</a>
+	  <p class="m-4">that is good because it is very attractive for me in every were but i like that is good but i fined it is vry index</p>
+	  <h1>sushil bhai</h1>
+	  <h2>Web developer</h2>
+	  </div>
+	  </div>
+	  <div class="col-lg-4 col-md-4 col-12">
+	  <div class="box">
+	  <a href="#"><img src="https://www.ultrabookreview.com/wp-content/uploads/2019/01/dell-xps-13-9380-2.jpg"class="img-fluid img-thumbnail"</a>
+	  <p class="m-4">that is good because it is very attractive for me in every were but i like that is good but i fined it is vry index</p>
+	  <h1>sushil bhai</h1>
+	  <h2>Web developer</h2>
+	  </div>
+	  </div><!--end-->
+	  </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+  
+</div>
+ </section>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha256-wldfwyVJyA71oKe6Sba0fKZkaR6CMwtb0DnWcQs6N1Y=" crossorigin="anonymous"></script>
+  
+  <script>
+  $('.count').counterUp({
+    delay: 10,
+    time: 5000
+});
+</script>
+</body>
+</html>
